@@ -1,80 +1,203 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Missão Seca 15</title>
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Fredoka One', sans-serif;
+      background: linear-gradient(to bottom, #e9fef3, #ffffff);
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background: linear-gradient(to right, #00b894, #55efc4);
+      padding: 2rem;
+      text-align: center;
+      color: white;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      font-size: 3rem;
+      margin: 0;
+    }
+
+    section {
+      padding: 3rem 1.5rem;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .planos {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      justify-content: center;
+    }
+
+    .plano {
+      background: white;
+      border-radius: 20px;
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+      padding: 2rem;
+      width: 280px;
+      text-align: center;
+      position: relative;
+    }
+
+    .plano h3 {
+      font-size: 1.8rem;
+      color: #00b894;
+    }
+
+    .preco {
+      font-size: 1.5rem;
+      margin: 1rem 0;
+      color: #2d3436;
+    }
+
+    .badge {
+      position: absolute;
+      top: -10px;
+      right: -10px;
+      background: #fdcb6e;
+      color: #2d3436;
+      padding: 0.5rem 1rem;
+      border-radius: 50px;
+      font-size: 0.9rem;
+      font-weight: bold;
+    }
+
+    .promo {
+      text-decoration: line-through;
+      color: #d63031;
+      display: block;
+    }
+
+    .depoimentos, .feedback {
+      background: #f0fffa;
+      border-radius: 20px;
+      padding: 2rem;
+      margin-bottom: 2rem;
+    }
+
+    .depoimento {
+      margin-bottom: 1.5rem;
+    }
+
+    .quiz, .animacoes, .descontos {
+      margin-top: 2rem;
+      background: #dfffe7;
+      padding: 1.5rem;
+      border-radius: 15px;
+    }
+
+    img {
+      max-width: 100%;
+      border-radius: 15px;
+      margin: 1rem 0;
+    }
+
+    .quiz form {
+      margin-top: 1rem;
+    }
+
+    .quiz label {
+      display: block;
+      margin: 0.5rem 0;
+    }
+
+    .quiz input[type="radio"] {
+      margin-right: 0.5rem;
+    }
+
+    .quiz button {
+      margin-top: 1rem;
+      padding: 0.5rem 1.5rem;
+      background-color: #00b894;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 1rem;
+    }
+  </style>
 </head>
-<body class="bg-gradient-to-b from-green-100 via-white to-orange-100 font-sans">
-  <header class="bg-white shadow p-4">
-    <nav class="flex justify-between items-center max-w-5xl mx-auto">
-      <h1 class="text-2xl font-bold text-green-600">Missão Seca 15</h1>
-      <div class="space-x-4">
-        <a href="#planos" class="text-green-700 hover:underline">Planos e Preços</a>
-        <a href="#sobre" class="text-green-700 hover:underline">Sobre</a>
-        <a href="#depoimentos" class="text-green-700 hover:underline">Depoimentos</a>
-        <a href="#contato" class="text-green-700 hover:underline">Contato</a>
-      </div>
-    </nav>
+
+<body>
+  <header>
+    <h1>Missão Seca 15</h1>
+    <p>Emagreça até 10kg em 15 dias com nossos planos personalizados!</p>
   </header>
 
-  <section class="text-center py-20 px-4 bg-green-50">
-    <h2 class="text-4xl font-bold text-green-700 mb-4">Transforme seu corpo em 15 dias</h2>
-    <p class="text-lg mb-6 text-gray-700">Emagreça com saúde, com ou sem academia. Escolha o plano ideal para você!</p>
-    <video class="mx-auto rounded-lg shadow-xl" width="640" controls>
-      <source src="seu_video_promocional.mp4" type="video/mp4">
-      Seu navegador não suporta o vídeo.
-    </video>
+  <section>
+    <h2>Planos e Preços</h2>
+    <div class="planos">
+      <div class="plano">
+        <h3>Iniciante</h3>
+        <p class="preco">R$ 19,90</p>
+      </div>
+      <div class="plano">
+        <div class="badge">Mais comprado</div>
+        <h3>Intermediário</h3>
+        <p class="preco">R$ 32,90</p>
+      </div>
+      <div class="plano">
+        <div class="badge">Promoção</div>
+        <h3>Premium</h3>
+        <p class="preco">
+          <span class="promo">R$ 59,90</span>
+          R$ 49,90
+        </p>
+      </div>
+    </div>
+    <p style="text-align: center; margin-top: 1rem;">Planos negociáveis — pagamento via Pix: <strong>(83) 99686-7407</strong></p>
   </section>
 
-  <section id="planos" class="bg-white py-16 px-8 text-gray-800">
-    <div class="max-w-4xl mx-auto">
-      <h2 class="text-4xl font-bold mb-6 text-center text-green-600">Planos e Preços</h2>
-      <p class="mb-4 text-center text-lg">Escolha o plano ideal para você. Todos os valores são <strong>negociáveis</strong>! Entre em contato caso precise de ajuda.</p>
-      <ul class="mb-6 space-y-4">
-        <li><strong>Plano Iniciante – R$ 19,90:</strong> Programa completo sem academia, treinos em casa, cardápio funcional e suporte por e-mail.</li>
-        <li><strong>Plano Intermediário – R$ 32,90:</strong> Inclui plano sem/academia, jejum intermitente, lista de suplementos e grupo de apoio no WhatsApp.</li>
-        <li><strong>Plano Premium – R$ 49,90:</strong> Tudo dos outros planos + e-book extra, atualizações vitais e suporte VIP via WhatsApp.</li>
-      </ul>
-      <p class="text-center text-lg">💳 Pagamento via Pix para o número: <strong>(83) 99686-7407</strong></p>
-      <p class="text-center text-sm mt-2 text-gray-600">Após o pagamento, envie o comprovante para liberação do seu acesso.</p>
-    </div>
+  <section class="depoimentos">
+    <h2>Transformações reais</h2>
+    <img src="/mnt/data/file-Es87uwd9iRjGa7x37BmaSa" alt="Antes e Depois 1">
+    <img src="/mnt/data/file-WTVp3QhmFyQ4VrRSqiKEeS" alt="Antes e Depois 2">
+    <img src="/mnt/data/file-Lwc3yinvTxTyRxFKJmgCY8" alt="Antes e Depois 3">
   </section>
 
-  <section id="depoimentos" class="py-16 px-6 bg-orange-50">
-    <h2 class="text-3xl font-bold text-center text-orange-500 mb-10">Depoimentos de Clientes</h2>
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
-      <blockquote class="bg-white p-6 rounded-xl shadow-md">
-        <p class="text-gray-800 italic">"Em 15 dias perdi 6kg com o plano iniciante. Nem precisei ir à academia!"</p>
-        <footer class="mt-4 text-sm font-semibold">&mdash; Marina, 29 anos</footer>
-      </blockquote>
-      <blockquote class="bg-white p-6 rounded-xl shadow-md">
-        <p class="text-gray-800 italic">"O grupo no WhatsApp é sensacional. Tive apoio todos os dias. Vale cada centavo!"</p>
-        <footer class="mt-4 text-sm font-semibold">&mdash; Pedro, 34 anos</footer>
-      </blockquote>
-      <blockquote class="bg-white p-6 rounded-xl shadow-md">
-        <p class="text-gray-800 italic">"Segui o plano com academia e perdi 8kg em 2 semanas. Resultado top!"</p>
-        <footer class="mt-4 text-sm font-semibold">&mdash; Carla, 24 anos</footer>
-      </blockquote>
-      <blockquote class="bg-white p-6 rounded-xl shadow-md">
-        <p class="text-gray-800 italic">"O e-book é incrível e cheio de dicas que realmente funcionam!"</p>
-        <footer class="mt-4 text-sm font-semibold">&mdash; Lucas, 21 anos</footer>
-      </blockquote>
-    </div>
-    <div class="mt-10 max-w-xl mx-auto text-center">
-      <h3 class="text-2xl font-bold text-green-600 mb-2">Deixe seu feedback também!</h3>
-      <p class="text-gray-700 mb-4">Preencha o formulário e compartilhe sua experiência com a gente.</p>
-      <form class="bg-white p-6 rounded-lg shadow-md">
-        <input type="text" placeholder="Seu nome" class="w-full mb-4 px-4 py-2 border border-gray-300 rounded">
-        <textarea placeholder="Seu depoimento" class="w-full mb-4 px-4 py-2 border border-gray-300 rounded"></textarea>
-        <button class="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600">Enviar</button>
-      </form>
-    </div>
+  <section class="feedback">
+    <h2>Deixe seu depoimento</h2>
+    <p>Conte sua experiência e motive outras pessoas!</p>
+    <form>
+      <input type="text" placeholder="Seu nome" required><br><br>
+      <textarea placeholder="Seu depoimento" rows="4" required></textarea><br><br>
+      <button type="submit">Enviar</button>
+    </form>
   </section>
 
-  <footer class="bg-green-700 text-white text-center p-6">
-    <p>Missão Seca 15 &copy; 2025 - Todos os direitos reservados</p>
-  </footer>
+  <section class="descontos">
+    <h2>Descontos Especiais</h2>
+    <p>Clientes que indicarem 3 amigos ganham 1 mês grátis!</p>
+  </section>
+
+  <section class="animacoes">
+    <h2>Veja como funciona</h2>
+    <p>Entre em conato e veja explicações em vídeo, animações 3D, exemplos de cardápio e treino!</p>
+  </section>
+
+  <section class="quiz">
+    <h2>Descubra seu plano ideal</h2>
+    <p>Responda ao nosso quiz e veja qual plano combina com você!</p>
+    <form>
+      <label><input type="radio" name="objetivo"> Quero emagrecer rápido</label>
+      <label><input type="radio" name="objetivo"> Quero perder peso devagar, mas manter</label>
+      <label><input type="radio" name="objetivo"> Quero ganhar massa magra</label>
+      <label><input type="radio" name="objetivo"> Quero melhorar meu condicionamento físico</label>
+      <button type="submit">Ver meu plano</button>
+    </form>
+  </section>
 </body>
+
 </html>
