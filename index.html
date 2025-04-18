@@ -1,147 +1,80 @@
-
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Missão Seca 15</title>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Montserrat', sans-serif;
-      background: linear-gradient(180deg, #ffffff 0%, #f0fff0 100%);
-      color: #333;
-    }
-    header {
-      background: linear-gradient(90deg, #2ecc71, #27ae60);
-      color: white;
-      padding: 3rem 2rem;
-      text-align: center;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
-    }
-    header h1 {
-      font-size: 3rem;
-      margin-bottom: 0.5rem;
-    }
-    header p {
-      font-size: 1.2rem;
-    }
-    .section {
-      padding: 2.5rem 1.5rem;
-      max-width: 1000px;
-      margin: auto;
-    }
-    .features, .benefits, .testimonials {
-      background-color: #ffffff;
-      border-radius: 20px;
-      box-shadow: 0 6px 20px rgba(0,0,0,0.05);
-      padding: 2rem;
-      margin-bottom: 2rem;
-    }
-    .features ul, .benefits ul {
-      list-style: none;
-      padding: 0;
-    }
-    .features li, .benefits li {
-      padding: 0.8rem 0;
-      font-size: 1.1rem;
-    }
-    iframe {
-      border-radius: 16px;
-      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
-    }
-    .btn-pix {
-      background-color: #f39c12;
-      color: white;
-      padding: 1rem 2rem;
-      text-decoration: none;
-      font-size: 1.1rem;
-      border-radius: 12px;
-      display: inline-block;
-      margin-top: 1rem;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
-    }
-    .testimonials blockquote {
-      font-size: 1.1rem;
-      margin-bottom: 1.5rem;
-      padding-left: 1rem;
-      border-left: 4px solid #2ecc71;
-    }
-    .testimonial-author {
-      font-weight: bold;
-      margin-top: -1rem;
-      margin-bottom: 2rem;
-    }
-    footer {
-      text-align: center;
-      padding: 2rem 1rem;
-      font-size: 0.9rem;
-      background-color: #f5f5f5;
-      margin-top: 3rem;
-    }
-    img.qrcode {
-      width: 180px;
-      margin-top: 1rem;
-      border-radius: 12px;
-      box-shadow: 0 6px 20px rgba(0,0,0,0.1);
-    }
-  </style>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
-<body>
+<body class="bg-gradient-to-b from-green-100 via-white to-orange-100 font-sans">
+  <header class="bg-white shadow p-4">
+    <nav class="flex justify-between items-center max-w-5xl mx-auto">
+      <h1 class="text-2xl font-bold text-green-600">Missão Seca 15</h1>
+      <div class="space-x-4">
+        <a href="#planos" class="text-green-700 hover:underline">Planos e Preços</a>
+        <a href="#sobre" class="text-green-700 hover:underline">Sobre</a>
+        <a href="#depoimentos" class="text-green-700 hover:underline">Depoimentos</a>
+        <a href="#contato" class="text-green-700 hover:underline">Contato</a>
+      </div>
+    </nav>
+  </header>
 
-<header>
-  <h1>Missão Seca 15</h1>
-  <p>Transforme seu corpo em apenas 15 dias. Chega de desculpas, é hora de agir!</p>
-</header>
+  <section class="text-center py-20 px-4 bg-green-50">
+    <h2 class="text-4xl font-bold text-green-700 mb-4">Transforme seu corpo em 15 dias</h2>
+    <p class="text-lg mb-6 text-gray-700">Emagreça com saúde, com ou sem academia. Escolha o plano ideal para você!</p>
+    <video class="mx-auto rounded-lg shadow-xl" width="640" controls>
+      <source src="seu_video_promocional.mp4" type="video/mp4">
+      Seu navegador não suporta o vídeo.
+    </video>
+  </section>
 
-<section class="section">
-  <div class="features">
-    <h2>🔥 O que você vai aprender</h2>
-    <ul>
-      <li>✅ Cardápio funcional 100% ajustado para queima de gordura</li>
-      <li>✅ Treinos rápidos e eficazes com peso corporal (sem academia)</li>
-      <li>✅ Estratégias reais de jejum intermitente</li>
-      <li>✅ Suplementação natural com foco em resultados</li>
-    </ul>
-  </div>
+  <section id="planos" class="bg-white py-16 px-8 text-gray-800">
+    <div class="max-w-4xl mx-auto">
+      <h2 class="text-4xl font-bold mb-6 text-center text-green-600">Planos e Preços</h2>
+      <p class="mb-4 text-center text-lg">Escolha o plano ideal para você. Todos os valores são <strong>negociáveis</strong>! Entre em contato caso precise de ajuda.</p>
+      <ul class="mb-6 space-y-4">
+        <li><strong>Plano Iniciante – R$ 19,90:</strong> Programa completo sem academia, treinos em casa, cardápio funcional e suporte por e-mail.</li>
+        <li><strong>Plano Intermediário – R$ 32,90:</strong> Inclui plano sem/academia, jejum intermitente, lista de suplementos e grupo de apoio no WhatsApp.</li>
+        <li><strong>Plano Premium – R$ 49,90:</strong> Tudo dos outros planos + e-book extra, atualizações vitais e suporte VIP via WhatsApp.</li>
+      </ul>
+      <p class="text-center text-lg">💳 Pagamento via Pix para o número: <strong>(83) 99686-7407</strong></p>
+      <p class="text-center text-sm mt-2 text-gray-600">Após o pagamento, envie o comprovante para liberação do seu acesso.</p>
+    </div>
+  </section>
 
-  <div class="video-container" style="text-align: center; margin: 2rem 0;">
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/3z3k2YI7rI4" title="Motivação Fitness" allowfullscreen></iframe>
-  </div>
+  <section id="depoimentos" class="py-16 px-6 bg-orange-50">
+    <h2 class="text-3xl font-bold text-center text-orange-500 mb-10">Depoimentos de Clientes</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+      <blockquote class="bg-white p-6 rounded-xl shadow-md">
+        <p class="text-gray-800 italic">"Em 15 dias perdi 6kg com o plano iniciante. Nem precisei ir à academia!"</p>
+        <footer class="mt-4 text-sm font-semibold">&mdash; Marina, 29 anos</footer>
+      </blockquote>
+      <blockquote class="bg-white p-6 rounded-xl shadow-md">
+        <p class="text-gray-800 italic">"O grupo no WhatsApp é sensacional. Tive apoio todos os dias. Vale cada centavo!"</p>
+        <footer class="mt-4 text-sm font-semibold">&mdash; Pedro, 34 anos</footer>
+      </blockquote>
+      <blockquote class="bg-white p-6 rounded-xl shadow-md">
+        <p class="text-gray-800 italic">"Segui o plano com academia e perdi 8kg em 2 semanas. Resultado top!"</p>
+        <footer class="mt-4 text-sm font-semibold">&mdash; Carla, 24 anos</footer>
+      </blockquote>
+      <blockquote class="bg-white p-6 rounded-xl shadow-md">
+        <p class="text-gray-800 italic">"O e-book é incrível e cheio de dicas que realmente funcionam!"</p>
+        <footer class="mt-4 text-sm font-semibold">&mdash; Lucas, 21 anos</footer>
+      </blockquote>
+    </div>
+    <div class="mt-10 max-w-xl mx-auto text-center">
+      <h3 class="text-2xl font-bold text-green-600 mb-2">Deixe seu feedback também!</h3>
+      <p class="text-gray-700 mb-4">Preencha o formulário e compartilhe sua experiência com a gente.</p>
+      <form class="bg-white p-6 rounded-lg shadow-md">
+        <input type="text" placeholder="Seu nome" class="w-full mb-4 px-4 py-2 border border-gray-300 rounded">
+        <textarea placeholder="Seu depoimento" class="w-full mb-4 px-4 py-2 border border-gray-300 rounded"></textarea>
+        <button class="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600">Enviar</button>
+      </form>
+    </div>
+  </section>
 
-  <div class="benefits">
-    <h2>🌿 Benefícios Reais</h2>
-    <ul>
-      <li>✔️ Até 10kg eliminados em 15 dias</li>
-      <li>✔️ Melhora da autoestima e disposição diária</li>
-      <li>✔️ Adeus ao inchaço e à barriga estufada</li>
-    </ul>
-  </div>
-
-  <div>
-    <h2>💳 Pagamento via Pix</h2>
-    <p>Realize o Pix para a chave abaixo e envie o comprovante pelo WhatsApp. O acesso ao curso será liberado em até 1 hora!</p>
-    <p><strong>Chave Pix (celular):</strong> (99) 99999-9999</p>
-    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/QR_Code_Example.svg/220px-QR_Code_Example.svg.png" class="qrcode" alt="QR Code Pix" />
-    <br />
-    <a href="https://wa.me/5599999999999" class="btn-pix">Enviar Comprovante via WhatsApp</a>
-  </div>
-
-  <div class="testimonials">
-    <h2>📢 Depoimentos Reais</h2>
-    <blockquote>“Eu tentei de tudo, mas só com o Missão Seca 15 eu vi meu corpo mudar de verdade. Em 13 dias, perdi 8kg e nunca me senti tão bem comigo mesma!”</blockquote>
-    <div class="testimonial-author">— Carla Mendes, 34 anos</div>
-    
-    <blockquote>“Comecei cético, mas segui o plano direitinho. Resultado? -6kg em duas semanas. Minha energia subiu e a barriga sumiu!”</blockquote>
-    <div class="testimonial-author">— Lucas Andrade, 29 anos</div>
-  </div>
-</section>
-
-<footer>
-  <p>© 2025 Missão Seca 15. Todos os direitos reservados.</p>
-  <p><a href="#">Termos de uso</a> | <a href="#">Política de privacidade</a></p>
-</footer>
-
+  <footer class="bg-green-700 text-white text-center p-6">
+    <p>Missão Seca 15 &copy; 2025 - Todos os direitos reservados</p>
+  </footer>
 </body>
 </html>
